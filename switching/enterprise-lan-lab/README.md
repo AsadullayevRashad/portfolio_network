@@ -44,7 +44,7 @@ Core Switch üzərində çoxşaxəli keçid (Layer 3 switching) təmin edilib:
 
 ### Hub və Native VLAN Problemi
 **Ssenari:** Hub-a qoşulu cihazların şəbəkəyə çıxışı və tag-li paketləri oxuya bilməməsi.
-**Həll:** Hub cihazı 802.1Q (tagging) başa düşmədiyi üçün Core Switch-in Hub-a gedən portunda **Native VLAN 10** təyin edilib. Bu, VLAN 10-a aid paketlərin Hub-a "untagged" (etiketsiz) göndərilməsini və rabitənin bərpasını təmin edib.
+**Həll:** Hub cihazı 802.1Q (tagging) başa düşmədiyi üçün Core Switch-in Hub-a gedən portunda **Native VLAN 10** təyin edilib. Bu, VLAN 10-a aid paketlərin Hub-a "untagged" (etiketsiz) göndərilməsini və rabitənin mümkünlüyünü təmin edib.
 
 ---
 
