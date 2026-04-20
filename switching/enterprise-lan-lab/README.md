@@ -7,7 +7,7 @@ This lab simulates a small enterprise network using a Core Layer 3 switch and mu
 ---
 
 ## Network Topology
-![Topology](./topology.png)
+![test](topology.png)
 
 - Core_L3_Sw01 (Layer 3 Switch)
 - Access_Sw01
