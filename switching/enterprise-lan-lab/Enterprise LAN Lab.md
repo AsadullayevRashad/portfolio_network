@@ -47,86 +47,54 @@ vtp mode server
 vtp domain LAB_NETWORK
 vtp password Cisco123
 
-```id="vtp001"
-
 ### Access Switches (Client)
 vtp mode client
 vtp domain LAB_NETWORK
 vtp password Cisco123
 
-```id="vtp002"
 
 ### VLANs (Core only)
-```
-
 vlan 10 - NATIVE
 vlan 20 - SALES
 vlan 30 - USERS
 vlan 40 - GUEST
 vlan 499 - NULL
 
-```id="vlan001"
-
 ✔ VLANs propagated via VTP over trunk links
 
----
 
-## 🔗 Trunk & Security
+## Trunk & Security
 
 ### Trunk Configuration
-```
-
 switchport mode trunk
 switchport trunk allowed vlan 10,20,30
 
-```id="trunk001"
-
 ### Unused Ports Hardening
-```
-
 interface range fa0/10 - 24
 shutdown
 description disable_by_policy
 switchport access vlan 499
 
-```id="sec001"
 
----
-
-## 🔄 EtherChannel
+## EtherChannel
 
 ### LACP (Access_Sw01 ↔ Core)
-```
-
 interface range g0/0 - 1
 channel-group 1 mode active
 
-```id="lacp001"
-
 ### PAgP (Access_Sw02 ↔ Core)
-```
-
 interface range g0/0 - 1
 channel-group 2 mode desirable
 
-```id="pagp001"
 
 ### Verification
-```
-
 show etherchannel summary
-
-```id="ver001"
-
 ✔ Status: Bundled (P)
 
----
 
-## 🌐 Inter-VLAN Routing
+## Inter-VLAN Routing
 
 ### SVI (Core Switch)
-```
-
 interface vlan 10
 ip address 192.168.10.254 255.255.255.0
 
@@ -138,25 +106,17 @@ ip address 192.168.30.254 255.255.255.0
 
 ip routing
 
-```id="svi001"
-
 ✔ Inter-VLAN communication enabled
 
----
 
-## 🔒 CDP & Security
+## CDP & Security
 
 ### Disable CDP on user ports
-```
-
 interface range fa0/1 - 24
 no cdp enable
 
-```id="cdp001"
 
----
-
-## ⚠️ Troubleshooting Scenario
+## Troubleshooting Scenario
 
 ### Issue
 Access_Sw03 users cannot reach gateway
@@ -165,34 +125,25 @@ Access_Sw03 users cannot reach gateway
 VLAN tagging / trunk mismatch
 
 ### Fix
-```
-
 switchport mode trunk
 switchport trunk native vlan 10
 
-```id="fix001"
-
 ✔ Ensures untagged traffic for legacy hub device
 
----
 
-## 📌 Design Notes
-
+## Design Notes
 - VTP works only over trunk links  
 - Hub does NOT support VLAN tagging  
 - EtherChannel cannot be used on hub links  
 - VLAN 499 is a blackhole VLAN (no routing)
 
----
 
-## 🚀 Result
-
+## Result
 - Centralized VLAN management (VTP)  
 - Redundant links (EtherChannel)  
 - Working Inter-VLAN routing  
 - Real troubleshooting scenario  
 
----
 
-## 📎 Environment
+## Environment
 Lab built using Cisco Packet Tracer
