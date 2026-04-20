@@ -16,7 +16,7 @@ This lab simulates a small enterprise network using a Core Layer 3 switch and mu
 - End devices (Users)
 
 <p align="center">
-  <img src="topology.png" width="700">
+  <img src="topology.png" width="750">
 </p>
 
 ---
