@@ -1,14 +1,12 @@
 ```markdown id="final001"
 # 🧠 Enterprise LAN Lab (VTP, EtherChannel, Inter-VLAN Routing, Security)
 
----
 
-## 📌 Overview
+## Overview
 This lab simulates a small enterprise network using a Core Layer 3 switch and multiple Access Layer switches. The design includes VLAN segmentation, VTP automation, EtherChannel redundancy, inter-VLAN routing, and Layer 2 security hardening.
 
----
 
-## 🧱 Topology
+## Topology
 
 - Core_L3_Sw01 (Layer 3 Switch)
 - Access_Sw01
@@ -21,9 +19,8 @@ This lab simulates a small enterprise network using a Core Layer 3 switch and mu
   <img src="topology.png" width="700">
 </p>
 
----
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - VLAN & Trunking (802.1Q)  
 - VTP (Server / Client)  
@@ -32,24 +29,20 @@ This lab simulates a small enterprise network using a Core Layer 3 switch and mu
 - CDP  
 - Troubleshooting  
 
----
 
-## 🎯 Lab Objectives
+## Lab Objectives
 
-✔ VLAN Segmentation  
-✔ Centralized VLAN management (VTP)  
-✔ Link redundancy (EtherChannel)  
-✔ Inter-VLAN communication  
-✔ Layer 2 security hardening  
-✔ Real troubleshooting scenario  
+VLAN Segmentation  
+Centralized VLAN management (VTP)  
+Link redundancy (EtherChannel)  
+Inter-VLAN communication  
+Layer 2 security hardening  
+Real troubleshooting scenario  
 
----
 
-## 🔧 VTP Configuration
+## VTP Configuration
 
 ### Core Switch (Server)
-```
-
 vtp mode server
 vtp domain LAB_NETWORK
 vtp password Cisco123
@@ -57,8 +50,6 @@ vtp password Cisco123
 ```id="vtp001"
 
 ### Access Switches (Client)
-```
-
 vtp mode client
 vtp domain LAB_NETWORK
 vtp password Cisco123
