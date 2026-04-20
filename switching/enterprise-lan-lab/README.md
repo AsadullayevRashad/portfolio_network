@@ -19,7 +19,7 @@ This lab simulates a small enterprise network with a Core Layer 3 switch and mul
 - Multiple end hosts (Users, Sales, Guest)
 
 > Add your topology diagram here:
-![Topology](topology.png)
+![Topology](/switching/enterprise-lan-lab/topology.png)
 
 ---
 
