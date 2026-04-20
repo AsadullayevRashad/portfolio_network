@@ -1,17 +1,16 @@
-# 🛠 Enterprise Network Infrastructure: Switching & Security Lab
+# Enterprise Network Infrastructure: Switching & Security Lab
 
-Bu layihə, korporativ şəbəkə mühitində Layer 2 və Layer 3 keçid (switching) texnologiyalarının tətbiqi, şəbəkə təhlükəsizliyinin bərkidilməsi (hardening) və redundansın təmin edilməsi məqsədilə hazırlanmışdır.
+Bu layihə, korporativ şəbəkə mühitində Layer 2 və Layer 3 switching texnologiyalarının tətbiqi, şəbəkə təhlükəsizliyinin (hardening) və redundansın təmin edilməsi məqsədilə hazırlanmışdır.
 
-## 📊 Şəbəkə Topologiyası
+## Şəbəkə Topologiyası
 
 Burada laboratoriya işinin vizual sxemi əks olunub:
 
 ![Şəbəkə Topologiyası](topology.png)
 
-*(Qeyd: Şəkli görmək üçün repository-nizə 'topology.png' adlı fayl əlavə etməlisiniz)*
 
 ## 📌 Layihənin Məqsədi
-Şəbəkə daxilində VLAN-ların mərkəzləşdirilmiş idarəetməsini qurmaq, EtherChannel vasitəsilə keçid xətlərini yedəkləmək və istifadə olunmayan portları "Null VLAN" strategiyası ilə təhlükəsiz hala gətirməkdir.
+Şəbəkə daxilində VLAN-ların mərkəzləşdirilmiş idarəetməsini qurmaq, EtherChannel vasitəsilə switch xətləri arasında LAG qurmaq və istifadə olunmayan portları "Null VLAN" strategiyası ilə təhlükəsiz hala gətirməkdir.
 
 ## 🚀 Texniki Konfiqurasiya
 
