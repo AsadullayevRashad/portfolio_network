@@ -2,6 +2,14 @@
 
 Bu layihə, korporativ şəbəkə mühitində Layer 2 və Layer 3 keçid (switching) texnologiyalarının tətbiqi, şəbəkə təhlükəsizliyinin bərkidilməsi (hardening) və redundansın təmin edilməsi məqsədilə hazırlanmışdır.
 
+## 📊 Şəbəkə Topologiyası
+
+Burada laboratoriya işinin vizual sxemi əks olunub:
+
+![Şəbəkə Topologiyası](topology.png)
+
+*(Qeyd: Şəkli görmək üçün repository-nizə 'topology.png' adlı fayl əlavə etməlisiniz)*
+
 ## 📌 Layihənin Məqsədi
 Şəbəkə daxilində VLAN-ların mərkəzləşdirilmiş idarəetməsini qurmaq, EtherChannel vasitəsilə keçid xətlərini yedəkləmək və istifadə olunmayan portları "Null VLAN" strategiyası ilə təhlükəsiz hala gətirməkdir.
 
