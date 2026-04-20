@@ -9,10 +9,10 @@ Burada laboratoriya işinin vizual sxemi əks olunub:
 ![Şəbəkə Topologiyası](topology.png)
 
 
-## 📌 Layihənin Məqsədi
+## Layihənin Məqsədi
 Şəbəkə daxilində VLAN-ların mərkəzləşdirilmiş idarəetməsini qurmaq, EtherChannel vasitəsilə switch xətləri arasında LAG qurmaq və istifadə olunmayan portları "Null VLAN" strategiyası ilə təhlükəsiz hala gətirməkdir.
 
-## 🚀 Texniki Konfiqurasiya
+## Texniki Konfiqurasiya
 
 ### 1. VTP (VLAN Trunking Protocol)
 VLAN idarəetməsini avtomatlaşdırmaq üçün VTP v2 tətbiq olunub:
@@ -40,7 +40,7 @@ Core Switch üzərində çoxşaxəli keçid (Layer 3 switching) təmin edilib:
 
 ---
 
-## 🔍 Troubleshooting & Analiz
+## Troubleshooting & Analiz
 
 ### Hub və Native VLAN Problemi
 **Ssenari:** Hub-a qoşulu cihazların şəbəkəyə çıxışı və tag-li paketləri oxuya bilməməsi.
@@ -48,7 +48,7 @@ Core Switch üzərində çoxşaxəli keçid (Layer 3 switching) təmin edilib:
 
 ---
 
-## 🛠 İstifadə Olunan Komandalar (Nümunə)
+## İstifadə Olunan Komandalar (Nümunə)
 
 ```cisco
 ! VTP Configuration
